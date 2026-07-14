@@ -1,5 +1,3 @@
-
-```markdown
 # SOC Multi-Agent AI System
 
 An automated security operations pipeline that processes raw logs through four specialized agents to detect, correlate, and remediate threats end-to-end. Built with LangGraph, Qwen 2.5 7B (local), ChromaDB RAG, and Docker.
