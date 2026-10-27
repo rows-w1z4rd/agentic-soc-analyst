@@ -212,7 +212,7 @@ soc-project/
 ├─ scripts/trigger.sh        launch attacks on demand during a demo
 ├─ docker-compose.yml        baseline stack + `elk` and `sandbox` profiles
 ├─ Dockerfile                Python 3.11 app image
-├─ KING.md                   system design spec
+├─ KING.md                   architecture reference
 └─ PAWN.md                   build log
 ```
 
@@ -273,7 +273,7 @@ docker compose --profile elk --profile sandbox down     # without -v, so the mod
 
 ## Design decisions
 
-The full reasoning is in [KING.md](KING.md#key-design-decisions-for-the-presentation).
+The full reasoning is in [PAWN.md](PAWN.md#decisions-worth-noting).
 
 - **One model, four roles.** A single Qwen 2.5 7B serves every agent with a different system prompt. The
   agents differ by responsibility, not by weights, which keeps it deployable on one laptop GPU.
@@ -320,10 +320,10 @@ The full reasoning is in [KING.md](KING.md#key-design-decisions-for-the-presenta
 ## Docs map
 
 - **README.md** (this file): the front door, with the overview, screenshots, and how to run it.
-- **[KING.md](KING.md)**: the **system design spec**, with the architecture, all four agents in detail,
-  the bonus extension designs, and the key decisions.
-- **[PAWN.md](PAWN.md)**: the **build log**, with what was built and when, and the problems met along the
-  way.
+- **[KING.md](KING.md)**: the **architecture reference**, with the containers, all four agents in detail,
+  the RAG collections, the measured results and the known limitations.
+- **[PAWN.md](PAWN.md)**: the **build log**, with what was built and when, what broke and how it was fixed,
+  and the decisions worth noting.
 - **[Experimentation report](https://github.com/user-attachments/files/29169172/Experimentation_Report.docx)**:
   detection accuracy, model performance (CPU vs GPU), limits and perspectives.
 
