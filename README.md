@@ -331,4 +331,4 @@ The full reasoning is in [PAWN.md](PAWN.md#decisions-worth-noting).
 
 ## License
 
-Academic project (ENSI, 2025/2026). Not licensed for redistribution.
+Academic project rows-w1z4rd.
